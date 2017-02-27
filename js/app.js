@@ -113,6 +113,7 @@ Player.prototype.handleInput = function (key) {
         // Move right
         case 'right':
         if(this.x < 365) {// will impose the payer not to move off canvas on the right
+            this.x = this.x + 83;
         }
         break;
     }
